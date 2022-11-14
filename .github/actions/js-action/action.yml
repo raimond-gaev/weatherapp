@@ -10,4 +10,4 @@ outputs:
     description: 'The time we greated you'
 runs:
   using: 'node16'
-  main: 'indx.js'
+  main: 'index.js'
