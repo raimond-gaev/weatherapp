@@ -1,0 +1,7 @@
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+jobs:
+  steps:
+    - name: Print a line
+      run: echo 'This line will be printed every day'
