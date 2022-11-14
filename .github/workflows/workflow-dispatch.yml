@@ -1,0 +1,16 @@
+on:
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'
+        reuiqred: true
+        default: 'warning'
+      tags:
+        description: 'Test scenario tags'
+
+jobs:
+  explore-workflow_dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print a line
+        run: echo 'This line will be printed every day'
