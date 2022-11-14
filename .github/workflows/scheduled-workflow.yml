@@ -2,6 +2,8 @@ on:
   schedule:
     - cron: '*/15 * * * *'
 jobs:
-  steps:
-    - name: Print a line
-      run: echo 'This line will be printed every day'
+  explore-scheduler:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print a line
+        run: echo 'This line will be printed every day'
