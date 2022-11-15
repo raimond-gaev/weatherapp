@@ -1,0 +1,7 @@
+on: repository_dispatch
+jobs:
+  explore-workflow_dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print a line
+        run: echo 'This line will be printed every day'
