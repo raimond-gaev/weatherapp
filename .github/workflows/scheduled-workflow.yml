@@ -1,6 +1,7 @@
 on:
   schedule:
-    - cron: '41 * * * *'
+    - cron: '43 * * * *'
+
 jobs:
   explore-scheduler:
     runs-on: ubuntu-latest
