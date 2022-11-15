@@ -1,6 +1,6 @@
-# on:
-#   schedule:
-#     - cron: '30 * * * *'
+on: [push]
+  # schedule:
+  #   - cron: '30 * * * *'
 jobs:
   explore-scheduler:
     runs-on: ubuntu-latest
