@@ -9,13 +9,13 @@ jobs:
     runs-on: ubuntu-latest
     #custom variable at a job level
     env:
-      message_from_job: This variable was defined at a job level
+      Message_from_job: This variable was defined at a job level
     steps:
       - name: Print a line
         run: |
           echo "$MESSAGE_FROM_WORKFLOW"
-          echo "$message_from_job"
-          echo "$message_from_step"
+          echo "$Message_from_job"
+          echo "$Message_from_step"
         #custom variable at a step level
         env:
-          message_from_step: This variable was defined at a step level
+          Message_from_step: This variable was defined at a step level
