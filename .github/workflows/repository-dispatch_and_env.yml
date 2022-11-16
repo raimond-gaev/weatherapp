@@ -24,3 +24,6 @@ jobs:
         #custom variable at a step level
         env:
           Message_from_step: This variable was defined at a step level
+      - name: print a script
+        run: ./.github/scrtipts/message.sh
+        shell: bash
