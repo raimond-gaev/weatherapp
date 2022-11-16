@@ -59,4 +59,4 @@ jobs:
       - name: printing the result of file
         shell: bash
         run: |
-          echo output.log
+          head -n100 output.log
