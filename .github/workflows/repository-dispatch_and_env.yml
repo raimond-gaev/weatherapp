@@ -35,6 +35,7 @@ jobs:
           chmod +x ./.github/scripts/message.sh
           bash ./.github/scripts/message.sh
   get-artifact:
+    runs-on: ubuntu-latest
     steps:
       - shell: bash
         run: |
