@@ -21,7 +21,6 @@ jobs:
           echo "$MESSAGE_FROM_WORKFLOW"
           echo "$Message_from_job"
           echo "$Message_from_step"
-        #default variable
           echo "$RUNNER_NAME"
         #custom variable at a step level
         env:
