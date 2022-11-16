@@ -1,5 +1,6 @@
-on: [push]
-
+on:
+  repository_dispatch:
+    types: [on-demand-test]
 jobs:
   lets-try-matrix:
     strategy:
