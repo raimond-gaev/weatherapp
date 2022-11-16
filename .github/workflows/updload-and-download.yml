@@ -11,12 +11,5 @@ jobs:
       - name: archive production artifact
         uses: actions/upload-artifact@v3
         with:
-          name: dist-without-markdown
-          path: |
-            dist
-            !dist/**/*.md
-      - name: archive code production results
-        uses: actions/upload-artifact@v3
-        with:
-          name: code-coverage-report
-          path: output/test/code-coverage.html
+          name: dist-text-file
+          path: dist/my_file.txt
