@@ -24,11 +24,17 @@ jobs:
         #custom variable at a step level
         env:
           Message_from_step: This variable was defined at a step level
+      - name: script inside of other
+        shell: bash
+        run: |
+          bash ./.github/scripts/message.sh
+
   get-message-from-script:
     runs-on: ubuntu-latest
     steps:
+      #ALWAYS YOU SHOULD CHECK OUT FIRST!!!!!
       - uses: actions/checkout@v1
       - name: print a script
         run: |
-          chmod +x ./message.sh
-          bash ./message.sh
+          chmod +x ./.github/scripts/message.sh
+          bash ./.github/scripts/message.sh
