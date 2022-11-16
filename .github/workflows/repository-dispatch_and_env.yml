@@ -25,7 +25,6 @@ jobs:
         env:
           Message_from_step: This variable was defined at a step level
   get-message-from-script:
-    runs-on: ubuntu-latest
     steps:
       - name: print a script    
         run: ./.github/scripts/message.sh
