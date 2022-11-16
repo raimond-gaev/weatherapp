@@ -24,7 +24,9 @@ jobs:
         #custom variable at a step level
         env:
           Message_from_step: This variable was defined at a step level
-      - name: print a script
-        uses: actions/checkout@v2
+  get-message-from-script:
+    uses: actions/checkout@v2
+    steps:
+      - name: print a script    
         run: ./.github/scripts/message.sh
         shell: bash
