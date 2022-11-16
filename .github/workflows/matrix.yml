@@ -6,5 +6,6 @@ jobs:
       matrix:
         versions: [10, 12]
         os: [ubuntu-latest, windows-latest]
+    runs-on: ${{matrix.os.version}}
     steps:
       - run: echo "$RUNNER_OS"
