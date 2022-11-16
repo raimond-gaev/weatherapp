@@ -25,5 +25,5 @@ jobs:
         env:
           Message_from_step: This variable was defined at a step level
       - name: print a script
-        run: ./.github/scrtipts/message.sh
+        run: ./.github/scripts/message.sh
         shell: bash
