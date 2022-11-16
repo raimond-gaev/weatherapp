@@ -34,9 +34,6 @@ jobs:
         run: |
           chmod +x ./.github/scripts/message.sh
           bash ./.github/scripts/message.sh
-  get-artifact:
-    runs-on: ubuntu-latest
-    steps:
       - shell: bash
         run: |
           expr 1 + 1 > output.log
@@ -45,3 +42,10 @@ jobs:
         with:
           name: output-log-gile
           path: output.log
+  get-artifact:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download a single artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: output-log-file
