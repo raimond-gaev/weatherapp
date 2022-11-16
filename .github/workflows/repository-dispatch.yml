@@ -3,7 +3,7 @@ on:
     types: [only_env]
 env:
   #custom env variable at workflow level
-  mes: This variable was defined at a workflow level
+  Mes: This variable was defined at a workflow level
 jobs:
   explore-workflow_dispatch:
     runs-on: ubuntu-latest
@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Print a line
         run: |
-          echo "$mes"
+          echo "$Mes"
           echo "$Message_from_job"
           echo "$Message_from_step"
         #custom variable at a step level
