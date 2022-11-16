@@ -43,7 +43,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: output-log-file
-          path: outputd.log
+          path: output.log
   
   get-artifact:
     #spesifying the need for download
