@@ -29,5 +29,5 @@ jobs:
     steps:
       - name: print a script
         run: |
-          chmod +x ${GITHUB_WORKSPACE}/message.sh
+          chmod +x message.sh
           bash ./message.sh
