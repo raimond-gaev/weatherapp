@@ -1,4 +1,6 @@
-on: [push]
+on:
+  repository_dispatch:
+    types: [only_for_ud]
 
 jobs:
   build_and_test:
