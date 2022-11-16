@@ -28,4 +28,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print a script
-        run: bash ./message.sh
+        run: |
+          chmod +x ./meesage.sh
+          bash ./message.sh
