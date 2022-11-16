@@ -27,7 +27,6 @@ jobs:
   get-message-from-script:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
       - name: print a script    
         run: ./.github/scripts/message.sh
         shell: bash
