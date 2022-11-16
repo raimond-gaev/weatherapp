@@ -16,7 +16,7 @@ jobs:
       Message_from_job: This variable was defined at a job level
     steps:
       - name: Print a line
-        if: ${{env.Message_from_job}}
+        if: ${{env.MESSAGE_FROM_WORKFLOW == 'This variable was defined at a workflow level'}}
         run: |
           echo "$MESSAGE_FROM_WORKFLOW"
           echo "$Message_from_job"
