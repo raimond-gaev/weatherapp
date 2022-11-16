@@ -34,19 +34,29 @@ jobs:
         run: |
           chmod +x ./.github/scripts/message.sh
           bash ./.github/scripts/message.sh
+      #creating a file for artifact
       - shell: bash
         run: |
           expr 1 + 1 > output.log
+      #uploading artifact
       - name: Upload output file
         uses: actions/upload-artifact@v3
         with:
-          name: output-log-gile
+          name: output-log-file
           path: output.log
+  
   get-artifact:
+    #spesifying the need for download
     needs: get-message-from-script
     runs-on: ubuntu-latest
     steps:
+      #downloading artifact
       - name: Download a single artifact
         uses: actions/download-artifact@v3
         with:
           name: output-log-file
+      #printing the result
+      - name: printing the result of file
+        shell: bash
+        run: |
+          echo output.log
