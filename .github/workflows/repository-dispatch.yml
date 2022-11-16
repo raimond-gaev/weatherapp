@@ -7,7 +7,7 @@ env:
 jobs:
   explore-workflow_dispatch:
     #example of context variable
-    if: ${{github.ref}}
+    #if: ${{github.ref}}
     runs-on: ubuntu-latest
     #custom variable at a job level
     #examples of custom variables used in context
