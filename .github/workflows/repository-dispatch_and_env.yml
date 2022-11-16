@@ -28,4 +28,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print a script
-        run: bash ${GITHUB_WORKSPACE}/message.sh
+        run: bash ./message.sh
