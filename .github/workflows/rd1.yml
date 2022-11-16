@@ -10,8 +10,9 @@ jobs:
       MESSAGE_FROM_JOB: This variable was defined at a job level
     steps:
       - name: Print a line
-        run: echo "$Message_from_workflow:"
-        run: echo "$MESSAGE_FROM_JOB"
-        run: echo "$Message_from_step"
+        run: |
+          echo "$MESSAGE_FROM_WORKFLOW"
+          echo "$Message_from_job"
+          echo "$Message_from_step"
         env:
           Message_from_step: This variable was defined at a step level
