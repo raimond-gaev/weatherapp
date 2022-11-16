@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     #custom variable at a job level
     #examples of custom variables used in context
-    if: ${{env.MESSAGE_FROM_WORKFLOW}}
+    if: ${{env.MESSAGE_FROM_WORKFLOW == 'This variable was defined at a workflow level'}}
     #if: ${{env.Message_from_job}}
     env:
       Message_from_job: This variable was defined at a job level
