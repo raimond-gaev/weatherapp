@@ -40,10 +40,10 @@ jobs:
           expr 1 + 1 > output.log
       #uploading artifact
       - name: Upload output file
-        #uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v3
         with:
           name: output-log-file
-          path: output.log
+          path: outputd.log
   
   get-artifact:
     #spesifying the need for download
