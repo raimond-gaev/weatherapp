@@ -1,0 +1,10 @@
+on: [push]
+
+jobs:
+  lets-try-matrix:
+    strategy:
+      matrix:
+        versions: [10, 12]
+        os: [ubuntu-latest, windows-latest]
+    steps:
+      - run: echo "$RUNNER_OS"
