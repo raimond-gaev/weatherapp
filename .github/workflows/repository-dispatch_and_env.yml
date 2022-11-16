@@ -43,6 +43,7 @@ jobs:
           name: output-log-gile
           path: output.log
   get-artifact:
+    needs: get-message-from-script
     runs-on: ubuntu-latest
     steps:
       - name: Download a single artifact
