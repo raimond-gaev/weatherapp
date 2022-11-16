@@ -1,5 +1,6 @@
 on:
   repository_dispatch:
+  #POST should have a -d '{"event_type":"on-demand-test"}'
     types: [on-demand-test]
 jobs:
   lets-try-matrix:
