@@ -26,7 +26,9 @@ jobs:
           Message_from_step: This variable was defined at a step level
       - name: script inside of other
         shell: bash
-        run: bash ./.github/scripts/message.sh
+        run: |
+          chmod +x ./.github/scripts/message.sh
+          bash ./.github/scripts/message.sh
 
   get-message-from-script:
     runs-on: ubuntu-latest
