@@ -2,17 +2,20 @@ on:
   repository_dispatch:
     types: [only_env]
 env:
+  #custom env variable at workflow level
   MESSAGE_FROM_WORKFLOW: This variable was defined at a workflow level
 jobs:
   explore-workflow_dispatch:
     runs-on: ubuntu-latest
+    #custom variable at a job level
     env:
-      Message_from_job: This variable was defined at a job level
+      message_from_job: This variable was defined at a job level
     steps:
       - name: Print a line
         run: |
           echo "$MESSAGE_FROM_WORKFLOW"
           echo "$Message_from_job"
           echo "$Message_from_step"
+        #custom variable at a step level
         env:
-          Message_from_step: This variable was defined at a step level
+          message_from_step: This variable was defined at a step level
