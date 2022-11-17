@@ -13,7 +13,7 @@ jobs:
           node-version: '16.x'
           registry-url: 'https://npm.pkg.github.com'
           scope: '@raimond-gaev'
-      - run: npm ci --prefix backend
+      - run: npm ci -y --prefix backend
       - run: npm init --prefix backend
       - run: npm publish --prefix backend
         env:
