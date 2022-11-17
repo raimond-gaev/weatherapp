@@ -7,8 +7,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Create annotation for build error
-        run: echo "::error file=app.js,line=1::Missing semicolon"
+      - name: Setting debug
+        run: echo "::debug::Set the Octocat variable"
       - name: Hello world action step
         id: Hello
         uses: raimond-gaev/my-first-action@v1
