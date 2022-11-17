@@ -1,9 +1,13 @@
 {
-  "name": "weatherapp-backend",
+  "name": "@raimond-gaev/weatherapp",
   "version": "0.0.1",
   "description": "Weatherapp exercise backend",
   "author": "Marko Klemetti <marko.klemetti@gmail.com>",
   "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raimond-gaev/weatherapp.git"
+  },
   "scripts": {
     "start": "node src/index.js",
     "dev": "DEBUG=weathermap ./node_modules/.bin/nodemon src/index.js",
