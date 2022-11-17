@@ -6,7 +6,7 @@ env:
 jobs:
   build-and-push-image:
     runs-on: ubuntu-latest
-    presmissions:
+    persmissions:
       contents: read
       packages: write
     steps:
