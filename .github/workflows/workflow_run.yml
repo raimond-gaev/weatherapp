@@ -2,8 +2,8 @@
 on:
   workfloe_run:
     workflows: [status]
-      types:
-        - completed
+    types:
+      - completed
 jobs:
   add-label:
     runs-on: ubuntu-latest
