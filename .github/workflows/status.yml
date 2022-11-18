@@ -1,0 +1,10 @@
+#occurs if status of commit chagnes
+on:
+  status
+
+jobs:
+  add-label:
+    runs-on: ubuntu-latest
+    steps:
+      - name: run event
+        run: echo "this is a registry publish event"

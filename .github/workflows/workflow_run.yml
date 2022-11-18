@@ -1,0 +1,12 @@
+#runs workflow when activity related to GitHub PAckages happens
+on:
+  workfloe_run:
+    workflows: [status]
+      types:
+        - completed
+jobs:
+  add-label:
+    runs-on: ubuntu-latest
+    steps:
+      - name: run event
+        run: echo "this is a workflow run  event"
