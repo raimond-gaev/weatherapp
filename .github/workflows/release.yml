@@ -1,0 +1,11 @@
+#runs workflow when release activity occures
+on:
+  registry_package:
+    types: [published]
+
+jobs:
+  add-label:
+    runs-on: ubuntu-latest
+    steps:
+      - name: run event
+        run: echo "this is a release event"

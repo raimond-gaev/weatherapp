@@ -1,0 +1,11 @@
+#runs workflow when activity related to GitHub PAckages happens
+on:
+  registry_package:
+    types: [published]
+
+jobs:
+  add-label:
+    runs-on: ubuntu-latest
+    steps:
+      - name: run event
+        run: echo "this is a registry publish event"
