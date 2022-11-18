@@ -1,0 +1,10 @@
+on:
+  label:
+    types: [created, deleted]
+
+jobs:
+  add-label:
+    runs-on: ubuntu-latest
+    steps:
+      - name: run event
+        run: echo "this is a label event"
