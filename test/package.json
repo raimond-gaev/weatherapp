@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@raimond-gaev/weatherapp": "^0.0.3"
+  }
+}

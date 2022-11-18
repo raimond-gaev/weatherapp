@@ -1,0 +1,26 @@
+on:
+  workflow_dispatch:
+    #You pass inputs to the call
+    inputs:
+      #pass "logLEvel"
+      logLevel:
+        description: 'Log level'
+        reuiqred: true
+        default: 'warning'
+      #pass "tags"
+      tags:
+        description: 'Test scenario tags'
+
+jobs:
+  explore-workflow_dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print inputs
+      #print inputs
+        run: |
+          echo "Log level: $LEVEL"
+          echo "Tags: $TAGS"
+      #spesify inputs as custom variables
+        env:
+          LEVEL: ${{ inputs.logLevel }}
+          TAGS: ${{ inputs.tags }}

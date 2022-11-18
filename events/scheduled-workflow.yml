@@ -1,0 +1,10 @@
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+
+jobs:
+  explore-scheduler:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print a line
+        run: echo 'This line will be printed every day'

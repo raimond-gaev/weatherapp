@@ -1,0 +1,10 @@
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  print-line:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print a line
+        run: echo "issue works"
