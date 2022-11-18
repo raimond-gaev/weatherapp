@@ -1,5 +1,5 @@
 on:
-  label:
+  pull_request:
     types: [opened, reopened]
 
 jobs:
