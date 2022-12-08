@@ -9,4 +9,5 @@ node_modules
 
 post-req
 test/
+/test2
 .npmrc
