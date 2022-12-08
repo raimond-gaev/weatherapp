@@ -8,6 +8,12 @@ node_modules
 *.log
 
 post-req
+
+#all files inside folder
 test/
+#folder and its all files
 /test2
+
+test/*.txt
+
 .npmrc
