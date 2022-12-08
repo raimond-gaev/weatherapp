@@ -9,11 +9,13 @@ node_modules
 
 post-req
 
-#all files inside folder
+.npmrc
+#ignore folders at any depth
 test/
+f2/
 #folder and its all files
 /test2
-
-test3/*.txt
-
-.npmrc
+#delete all text files in next level of folder, but not futher!
+/test3/*.txt
+#ignore all files in folder at any depth
+/test4/**/*.txt
