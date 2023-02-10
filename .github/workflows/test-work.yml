@@ -1,0 +1,18 @@
+name: work-work-work
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build_containers:
+    name: Build Containers
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Try echo date
+      run: echo "WORKFLOW_RUN_DATE=$(date +"%Y-%m-%d")"
+    - name: Try echo docker
+      run: echo "docker version"
