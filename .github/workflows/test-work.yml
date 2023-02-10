@@ -15,4 +15,4 @@ jobs:
     - name: Try echo date
       run: echo "WORKFLOW_RUN_DATE=$(date +"%Y-%m-%d")"
     - name: Try echo docker
-      run: echo "docker version"
+      run: docker version
